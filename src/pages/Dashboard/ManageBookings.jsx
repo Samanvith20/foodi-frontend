@@ -13,7 +13,7 @@ const ManageBookings = () => {
     const { refetch, data: Payments = [] } = useQuery({
         queryKey: ['Payments'],
         queryFn: async () => {
-            const res = await fetch(`https://foodi-backend-1.onrender.com/api/v1/payment/all`, {
+            const res = await fetch(`https://foodi-backend-2.onrender.com/api/v1/payment/all`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }

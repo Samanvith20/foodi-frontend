@@ -26,7 +26,7 @@ const ManageItems = () => {
     }).then(async (result) => {
       console.log(result);
       if (result.isConfirmed) {
-        const res = await axios.delete(`https://foodi-backend-1.onrender.com/api/v1/menu/delete/${item._id}`);
+        const res = await axios.delete(`https://foodi-backend-2.onrender.com/api/v1/menu/delete/${item._id}`);
         // console.log(res);
         console.log(item._id);
        if(res) {

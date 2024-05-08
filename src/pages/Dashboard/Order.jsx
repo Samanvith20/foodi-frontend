@@ -12,7 +12,7 @@ const Order = () => {
     const {  data: Orders = [] } = useQuery({
         queryKey: ['Orders', user?.email],
         queryFn: async () => { 
-            const res = await fetch(`https://foodi-backend-1.onrender.com/api/v1/payment/orders?email=${user?.email}`, {
+            const res = await fetch(`https://foodi-backend-2.onrender.com/api/v1/payment/orders?email=${user?.email}`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }

@@ -31,7 +31,7 @@ const Signup = () => {
         name:data?.name,
          email: data?.email
        }
-       axios.post("https://foodi-backend-1.onrender.com/api/v1/user/create",Userinfo)
+       axios.post("https://foodi-backend-2.onrender.com/api/v1/user/create",Userinfo)
        .then(res=>{
         console.log(res);
         alert("Signin successful!");
@@ -56,7 +56,7 @@ const Signup = () => {
             email: user?.email,
           };
           axios
-            .post("https://foodi-backend-1.onrender.com/api/v1/user/create", userInfo)
+            .post("https://foodi-backend-2.onrender.com/api/v1/user/create", userInfo)
             .then((response) => {
               // console.log(response);
               alert("Signin successful!");

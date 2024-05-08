@@ -13,7 +13,7 @@ const Menu = () => {
    useEffect(() => {
       const fetchdata = async () => {
          try {
-            const response = await fetch("https://foodi-backend-1.onrender.com/api/v1/menu");
+            const response = await fetch("https://foodi-backend-2.onrender.com/api/v1/menu");
             const data = await response.json();
             //console.log(data?.data);
             setMenu(data?.data);

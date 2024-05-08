@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Firebase/AuthProvider";
 
 const axiosSecure = axios.create({
-    baseURL: 'https://foodi-backend-1.onrender.com/api/v1',
+    baseURL: 'https://foodi-backend-2.onrender.com/api/v1',
 });
 
 const useAxiosSecure = () => {

@@ -51,7 +51,7 @@ const Modal = () => {
           email: result?.user?.email,
         };
         axios
-          .post("https://foodi-backend-1.onrender.com/api/v1/user/create", userInfor)
+          .post("https://foodi-backend-2.onrender.com/api/v1/user/create", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");

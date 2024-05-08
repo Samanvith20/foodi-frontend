@@ -42,7 +42,7 @@ const AuthProvider = ({children}) => {
             if(currentUser){
                 const userInfo ={email: currentUser?.email}
                 //console.log(userInfo);
-                axios.post("https://foodi-backend-1.onrender.com/jwt",userInfo)
+                axios.post("https://foodi-backend-2.onrender.com/jwt",userInfo)
                 .then(res=>{
                     //console.log(res?.data?.token);
                     if(res.data.token){
